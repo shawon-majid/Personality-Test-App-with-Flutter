@@ -56,11 +56,11 @@ class _MyHomePageState extends State<MyHomePage> {
       // _counter without calling setState(), then the build method would not be
       // called again, and so nothing would appear to happen.
 
-<<<<<<< HEAD
-      _counter = _counter + 2;
-=======
-      _counter = _counter + 1;
->>>>>>> new-feature
+      if (_counter % 2 == 0) {
+        _counter++;
+      } else {
+        _counter--;
+      }
     });
   }
 
