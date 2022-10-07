@@ -9,10 +9,15 @@ class Result extends StatelessWidget {
   String get resultPhrase {
     String resultText = 'your score is $totalScore';
 
-    if (totalScore <= 20) {
-      resultText = 'You\'re such a lovely, cute & innocent person';
+    if (totalScore >= 36 && totalScore <= 49) {
+      resultText =
+          'You are a shy worrier, somewhat introverted, kind, considerate & understanding';
+    } else if (totalScore >= 50 && totalScore <= 63) {
+      resultText =
+          'You are introverted extrovert, Others see you as fresh, lively, charming and interesting';
     } else {
-      resultText = 'You\'re such a creative & hardworking person';
+      resultText =
+          'You are very energetic, have so much positive powers and people love you to see as center of the attention';
     }
 
     return resultText;
@@ -20,8 +25,9 @@ class Result extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return Container(
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
             resultPhrase,
@@ -32,7 +38,12 @@ class Result extends StatelessWidget {
             ),
             textAlign: TextAlign.center,
           ),
-          TextButton(onPressed: reset, child: Text('Restart Quiz!'))
+          TextButton(
+              onPressed: reset,
+              child: Text(
+                'Restart Quiz!',
+                style: TextStyle(fontSize: 20),
+              ))
         ],
       ),
     );

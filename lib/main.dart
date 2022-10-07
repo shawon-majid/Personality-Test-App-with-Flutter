@@ -20,28 +20,66 @@ class _MyAppState extends State<MyApp> {
     {
       'questionText': 'What\'s your favorite color?',
       'answers': [
-        {'text': 'Black', 'score': 10},
-        {'text': 'Red', 'score': 7},
+        {'text': 'Black', 'score': 3},
+        {'text': 'Red', 'score': 6},
         {'text': 'Blue', 'score': 4},
-        {'text': 'White', 'score': 1},
+        {'text': 'White', 'score': 9},
+        {'text': 'I don\'t know', 'score': 5},
       ],
     },
     {
-      'questionText': 'What\'s your favorite animal?',
+      'questionText': 'You\'re waiting in a long line:',
       'answers': [
-        {'text': 'Rabbit', 'score': 3},
-        {'text': 'Snake', 'score': 11},
-        {'text': 'Elephant', 'score': 5},
-        {'text': 'Lion', 'score': 9},
+        {'text': 'You chat with the person next to you.', 'score': 12},
+        {'text': 'You keep your eyes on your phone', 'score': 5},
+      ],
+    },
+    {
+      'questionText': 'You feel most energetic and focused:',
+      'answers': [
+        {'text': 'In the morning', 'score': 8},
+        {'text': 'During the afternoon and early evening', 'score': 12},
+        {'text': 'Late at night', 'score': 5},
+        {'text': 'Never', 'score': 1},
+      ],
+    },
+    {
+      'questionText': 'Your desk is usually',
+      'answers': [
+        {'text': 'Super Organized', 'score': 10},
+        {'text': 'A jumble of everything you\'re working on', 'score': 8},
       ],
     },
     {
       'questionText': 'What do you like most?',
       'answers': [
-        {'text': 'CP', 'score': 10},
-        {'text': 'Development', 'score': 8},
-        {'text': 'Playing', 'score': 7},
-        {'text': 'Reading', 'score': 5},
+        {'text': 'CP', 'score': 6},
+        {'text': 'Development', 'score': 9},
+        {'text': 'Playing', 'score': 12},
+        {'text': 'Reading', 'score': 6},
+        {'text': 'Partying', 'score': 12},
+      ],
+    },
+    {
+      'questionText': 'Draw a Q on your forehead',
+      'answers': [
+        {
+          'text': 'You put the tail of the Q towards your left eye',
+          'score': 12
+        },
+        {
+          'text': 'You put the tail of the Q towards your right eye',
+          'score': 8
+        },
+      ],
+    },
+    {
+      'questionText': 'When you find something really funny, you usually give',
+      'answers': [
+        {'text': 'A big, appreciative laugh', 'score': 10},
+        {'text': 'A laugh, but not a loud one', 'score': 8},
+        {'text': 'A quite chuckle', 'score': 7},
+        {'text': 'A sheepish smile', 'score': 5},
       ],
     },
   ];
@@ -74,7 +112,7 @@ class _MyAppState extends State<MyApp> {
           // foregroundColor: Color(12),
           // backgroundColor: Color.fromARGB(255, 255, 0, 0),
           title: Text(
-            'Quiz App',
+            'Personality Test',
             // style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
           ),
         ),
